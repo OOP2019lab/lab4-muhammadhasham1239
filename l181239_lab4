@@ -1,0 +1,60 @@
+#include <fstream>
+#include <iostream>
+#include "Header.h"
+#include "Source.cpp"
+using namespace std;
+
+int main(){
+	CricketTeam A;
+string filepath;
+cout<<"Enter Path of file"<<endl;
+cin>>filepath;
+
+//constructor function;
+CricketTeam A(filepath.c,str());
+
+//Printing Team Information
+A.info();
+//Printing Team minor Information
+A.print();
+
+//getter setter of teamname;
+string name;
+cout<<"enter name of team"<<endl;
+cin>>name;
+A.setteamname(name);
+A.getteamname();
+
+//getter and setter of number of members
+int q=0;
+cout<<"Enter Number of members "<<endl;
+cin>>q;
+A.setnom(q);
+A.getnom;
+
+//getter setter function of Rank
+cout<<"eanter rank of team you want to enter"<<endl;
+cin.>q;
+A.setrank(q);
+A.getrank();
+
+//getter and setter of captain
+cout<<"Enter Name of Captain You want to enter"<<endl;
+cin>>name;
+A.setcaptain(name);
+A.getcaptain();
+
+//Input team member
+cout<<"Enter the new player You want to enter"<<endl;
+cin>>name;
+A.inputteammember(name);
+
+//Input Latest score
+cout<<"Enter new score of team"<<endl;
+cin>>q;
+A.inputscore(q);
+
+//Average Score of team
+A.average();
+}
+
